@@ -1,0 +1,502 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A43C84525D566A900DAE880 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A43C84425D566A900DAE880 /* GoogleService-Info.plist */; };
+		3A5167A125D51CBC005FEC9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5167A025D51CBC005FEC9E /* AppDelegate.swift */; };
+		3A5167A325D51CBC005FEC9E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5167A225D51CBC005FEC9E /* SceneDelegate.swift */; };
+		3A5167A525D51CBC005FEC9E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5167A425D51CBC005FEC9E /* MainViewController.swift */; };
+		3A5167A825D51CBC005FEC9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A5167A625D51CBC005FEC9E /* Main.storyboard */; };
+		3A5167AA25D51CBF005FEC9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A5167A925D51CBF005FEC9E /* Assets.xcassets */; };
+		3A5167AD25D51CBF005FEC9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A5167AB25D51CBF005FEC9E /* LaunchScreen.storyboard */; };
+		3A5167E725D54174005FEC9E /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5167E625D54174005FEC9E /* TaskModel.swift */; };
+		3A51680125D54BA2005FEC9E /* CreatTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A51680025D54BA2005FEC9E /* CreatTaskViewController.swift */; };
+		3A7347A625D66DA700F9F9E1 /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7347A525D66DA700F9F9E1 /* TaskTableViewCell.swift */; };
+		3A7347A925D673DE00F9F9E1 /* DetailTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7347A825D673DE00F9F9E1 /* DetailTaskViewController.swift */; };
+		63A434312999B75F10BB7C5A /* Pods_DailyPlanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 866C635C1F5BF79D92B45127 /* Pods_DailyPlanner.framework */; };
+		9B52298325D7906F00386500 /* MainViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B52298225D7906F00386500 /* MainViewPresenter.swift */; };
+		9B52298825D7951800386500 /* TaskService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B52298725D7951800386500 /* TaskService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		351F1D7711203ECE001587F7 /* Pods-DailyPlanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyPlanner.debug.xcconfig"; path = "Target Support Files/Pods-DailyPlanner/Pods-DailyPlanner.debug.xcconfig"; sourceTree = "<group>"; };
+		3A43C84425D566A900DAE880 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3A51679D25D51CBC005FEC9E /* DailyPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A5167A025D51CBC005FEC9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3A5167A225D51CBC005FEC9E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3A5167A425D51CBC005FEC9E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		3A5167A725D51CBC005FEC9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3A5167A925D51CBF005FEC9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3A5167AC25D51CBF005FEC9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3A5167AE25D51CBF005FEC9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A5167E625D54174005FEC9E /* TaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
+		3A51680025D54BA2005FEC9E /* CreatTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatTaskViewController.swift; sourceTree = "<group>"; };
+		3A7347A525D66DA700F9F9E1 /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
+		3A7347A825D673DE00F9F9E1 /* DetailTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTaskViewController.swift; sourceTree = "<group>"; };
+		866C635C1F5BF79D92B45127 /* Pods_DailyPlanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DailyPlanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B52298225D7906F00386500 /* MainViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewPresenter.swift; sourceTree = "<group>"; };
+		9B52298725D7951800386500 /* TaskService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskService.swift; sourceTree = "<group>"; };
+		F455F3E3901FD37845A95515 /* Pods-DailyPlanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyPlanner.release.xcconfig"; path = "Target Support Files/Pods-DailyPlanner/Pods-DailyPlanner.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A51679A25D51CBC005FEC9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63A434312999B75F10BB7C5A /* Pods_DailyPlanner.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A51679425D51CBC005FEC9E = {
+			isa = PBXGroup;
+			children = (
+				3A51679F25D51CBC005FEC9E /* DailyPlanner */,
+				3A51679E25D51CBC005FEC9E /* Products */,
+				9410C15C9F45E90B0034CE45 /* Pods */,
+				6EAFFA9E062EFF7AD223758B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3A51679E25D51CBC005FEC9E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A51679D25D51CBC005FEC9E /* DailyPlanner.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3A51679F25D51CBC005FEC9E /* DailyPlanner */ = {
+			isa = PBXGroup;
+			children = (
+				9B52298625D794EE00386500 /* Service */,
+				3A5167E525D54151005FEC9E /* UI */,
+				3A5167EA25D5417A005FEC9E /* Model */,
+				3A5167EB25D54198005FEC9E /* Supporting files */,
+			);
+			path = DailyPlanner;
+			sourceTree = "<group>";
+		};
+		3A5167E525D54151005FEC9E /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				9B52297E25D78FC100386500 /* MainScreen */,
+				9B52298125D78FE700386500 /* CreateTask */,
+				3A5167EC25D541A5005FEC9E /* View */,
+				3A7347A825D673DE00F9F9E1 /* DetailTaskViewController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		3A5167EA25D5417A005FEC9E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3A5167E625D54174005FEC9E /* TaskModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3A5167EB25D54198005FEC9E /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				3A5167A025D51CBC005FEC9E /* AppDelegate.swift */,
+				3A5167A225D51CBC005FEC9E /* SceneDelegate.swift */,
+				3A5167A925D51CBF005FEC9E /* Assets.xcassets */,
+				3A5167AB25D51CBF005FEC9E /* LaunchScreen.storyboard */,
+				3A5167AE25D51CBF005FEC9E /* Info.plist */,
+				3A43C84425D566A900DAE880 /* GoogleService-Info.plist */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		3A5167EC25D541A5005FEC9E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3A5167A625D51CBC005FEC9E /* Main.storyboard */,
+				3A7347A525D66DA700F9F9E1 /* TaskTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6EAFFA9E062EFF7AD223758B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				866C635C1F5BF79D92B45127 /* Pods_DailyPlanner.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9410C15C9F45E90B0034CE45 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				351F1D7711203ECE001587F7 /* Pods-DailyPlanner.debug.xcconfig */,
+				F455F3E3901FD37845A95515 /* Pods-DailyPlanner.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9B52297E25D78FC100386500 /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				3A5167A425D51CBC005FEC9E /* MainViewController.swift */,
+				9B52298225D7906F00386500 /* MainViewPresenter.swift */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		9B52298125D78FE700386500 /* CreateTask */ = {
+			isa = PBXGroup;
+			children = (
+				3A51680025D54BA2005FEC9E /* CreatTaskViewController.swift */,
+			);
+			path = CreateTask;
+			sourceTree = "<group>";
+		};
+		9B52298625D794EE00386500 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				9B52298725D7951800386500 /* TaskService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3A51679C25D51CBC005FEC9E /* DailyPlanner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A5167B125D51CBF005FEC9E /* Build configuration list for PBXNativeTarget "DailyPlanner" */;
+			buildPhases = (
+				A2D51858AB123C29E5F55DEC /* [CP] Check Pods Manifest.lock */,
+				3A51679925D51CBC005FEC9E /* Sources */,
+				3A51679A25D51CBC005FEC9E /* Frameworks */,
+				3A51679B25D51CBC005FEC9E /* Resources */,
+				FB45CD5309AA9D3093D793C7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DailyPlanner;
+			productName = DailyPlanner;
+			productReference = 3A51679D25D51CBC005FEC9E /* DailyPlanner.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3A51679525D51CBC005FEC9E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					3A51679C25D51CBC005FEC9E = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = 3A51679825D51CBC005FEC9E /* Build configuration list for PBXProject "DailyPlanner" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3A51679425D51CBC005FEC9E;
+			productRefGroup = 3A51679E25D51CBC005FEC9E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3A51679C25D51CBC005FEC9E /* DailyPlanner */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A51679B25D51CBC005FEC9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A5167AD25D51CBF005FEC9E /* LaunchScreen.storyboard in Resources */,
+				3A5167AA25D51CBF005FEC9E /* Assets.xcassets in Resources */,
+				3A43C84525D566A900DAE880 /* GoogleService-Info.plist in Resources */,
+				3A5167A825D51CBC005FEC9E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A2D51858AB123C29E5F55DEC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DailyPlanner-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB45CD5309AA9D3093D793C7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DailyPlanner/Pods-DailyPlanner-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DailyPlanner/Pods-DailyPlanner-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DailyPlanner/Pods-DailyPlanner-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A51679925D51CBC005FEC9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A7347A625D66DA700F9F9E1 /* TaskTableViewCell.swift in Sources */,
+				3A5167E725D54174005FEC9E /* TaskModel.swift in Sources */,
+				9B52298825D7951800386500 /* TaskService.swift in Sources */,
+				9B52298325D7906F00386500 /* MainViewPresenter.swift in Sources */,
+				3A5167A525D51CBC005FEC9E /* MainViewController.swift in Sources */,
+				3A5167A125D51CBC005FEC9E /* AppDelegate.swift in Sources */,
+				3A5167A325D51CBC005FEC9E /* SceneDelegate.swift in Sources */,
+				3A7347A925D673DE00F9F9E1 /* DetailTaskViewController.swift in Sources */,
+				3A51680125D54BA2005FEC9E /* CreatTaskViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3A5167A625D51CBC005FEC9E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A5167A725D51CBC005FEC9E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3A5167AB25D51CBF005FEC9E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A5167AC25D51CBF005FEC9E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3A5167AF25D51CBF005FEC9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3A5167B025D51CBF005FEC9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3A5167B225D51CBF005FEC9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 351F1D7711203ECE001587F7 /* Pods-DailyPlanner.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X84H3LFA4V;
+				INFOPLIST_FILE = "DailyPlanner/Supporting files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.DavidMikhailov.DailyPlanner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		3A5167B325D51CBF005FEC9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F455F3E3901FD37845A95515 /* Pods-DailyPlanner.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X84H3LFA4V;
+				INFOPLIST_FILE = "DailyPlanner/Supporting files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.DavidMikhailov.DailyPlanner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3A51679825D51CBC005FEC9E /* Build configuration list for PBXProject "DailyPlanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A5167AF25D51CBF005FEC9E /* Debug */,
+				3A5167B025D51CBF005FEC9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A5167B125D51CBF005FEC9E /* Build configuration list for PBXNativeTarget "DailyPlanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A5167B225D51CBF005FEC9E /* Debug */,
+				3A5167B325D51CBF005FEC9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3A51679525D51CBC005FEC9E /* Project object */;
+}
