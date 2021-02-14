@@ -7,8 +7,8 @@ target 'DailyPlanner' do
 
   # Pods for DailyPlanner
     pod 'FSCalendar'
-    # pod 'Firebase/Database'
-    # pod 'Firebase/Core'
+    pod 'Firebase/Database'
+    pod 'Firebase/Core'
 
 
 end

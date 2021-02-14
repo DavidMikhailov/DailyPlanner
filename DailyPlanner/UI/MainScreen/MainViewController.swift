@@ -7,7 +7,6 @@
 
 import UIKit
 import FSCalendar
-//import FirebaseDatabase
 
 protocol MainViewProtocol: class {
     func dataChanged()
@@ -15,7 +14,7 @@ protocol MainViewProtocol: class {
 
 class MainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, FSCalendarDelegate, MainViewProtocol {
         
-    var presenter: MainViewPresenterProtocol = MainViewPresenter()
+    var presenter: MainViewPresenterProtocol = MainViewPresenter(service: taskService)
     
     var incomeTasks = [Task]()
     var timeArray = [Date]()
@@ -26,8 +25,9 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        presenter.ui = self
+        presenter.load(ui: self)
         tableView.dataSource = self
+        tableView.delegate = self
         calendar.delegate = self
     }
     
@@ -54,75 +54,26 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //        let caseLeftHour = timeArray[indexPath.row].time.hour
-        //        let caseRightHour = timeArray[indexPath.row].time.hour + 1
-        //        let (name,description) = checkTaskIsInTheRange(caseLeftHour: caseLeftHour, caseRightHour: caseRightHour)
-        //        let caseDescriptionArray = [name,description, String(timeArray[indexPath.row].time.hour) + ":" + String(timeArray[indexPath.row].time.minute) + "0 - " + String(timeArray[indexPath.row].time.hour + 1) + ":" + String(timeArray[indexPath.row].time.minute) + "0"]
-        //
-        //        performSegue(withIdentifier: "segueDetailTask", sender: caseDescriptionArray)
+        let item = presenter.items[indexPath.row]
+        switch item {
+        case .task(let data):
+            let tadkId = data.tapContext.id
+            let detailsPresenter = DetailTaskPresenter(taskId: tadkId, tasksService: taskService)
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let detailsVc = storyboard.instantiateViewController(withIdentifier: String(describing: DetailTaskViewController.self)) as! DetailTaskViewController
+            detailsVc.presenter = detailsPresenter
+            self.navigationController?.pushViewController(detailsVc, animated: true)
+        default:
+            return
+        }
     }
-    
     
     // MARK: - MainViewProtocol
     func dataChanged() {
         tableView.reloadData()
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let vc = segue.destination as? DetailTaskViewController {
-            vc.destArray = sender as! [String]
-        }
-    }
-    
-    //
     func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
         presenter.didSelect(date: date)
-//                dayTasksArray = [Task]()
-//                let formatter = DateFormatter()
-//                formatter.dateFormat = "dd"
-//                let dayString = formatter.string(from: date)
-//                let dayNumber = Int(dayString)
-//                dayTasksArray = getTasksByDay(dayNumber!)
     }
-    
-    //    func getTasksByDay(_ day_id: Int) -> [Task] {
-    //        let filePath = Bundle.main.path(forResource: "Data", ofType: "json")!
-    //        var dayCasesArray = [Task]()
-    //        do {
-    //            let data = try Data(contentsOf: URL(fileURLWithPath: filePath))
-    //            incomeTasks = try JSONDecoder().decode([Task].self, from: data)
-    //
-    //        }
-    //        catch{
-    //            print(error)
-    //        }
-    //        for item in incomeTasks{
-    //            if item.day_id == day_id {
-    //                dayCasesArray.append(item)
-    //            }
-    //        }
-    //        return dayCasesArray
-    //    }
-    
-//
-//    func checkTaskIsInTheRange(caseLeftHour: Int, caseRightHour: Int) -> (String, String) {
-//        var dateStart = 0
-//        var dateFinish = 0
-//        print(dayTasksArray)
-//        for item in dayTasksArray {
-//            if String(item.taskDate_start).count > 2 {
-//                //                dateStart = Date(timeIntervalSince1970: Double(Int(item.taskDate_start))).time.hour
-//                //                dateFinish = Date(timeIntervalSince1970: Double(Int(item.taskDate_finish))).time.hour
-//                print(caseLeftHour,dateStart, caseRightHour, dateFinish)
-//            } else {
-//                dateStart = item.taskDate_start
-//                dateFinish = item.taskDate_finish
-//                print(caseLeftHour, dateStart,caseRightHour, dateFinish)
-//            }
-//            if dateStart >= caseLeftHour && dateFinish < caseRightHour  {
-//                return (item.taskName, item.taskDescription)
-//            }
-//        }
-//        return ("","")
-//    }
 }
